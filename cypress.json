@@ -1,1 +1,8 @@
-{}
+{
+  "videoUploadOnPasses": false,
+  "video": false,
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "numTestsKeptInMemory": 0,
+  "integrationFolder": "Cypress/integration"
+}
