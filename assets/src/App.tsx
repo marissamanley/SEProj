@@ -1,42 +1,32 @@
 import React, { useState, useEffect } from 'react'
-import logo from './img/logo.png'
-import discord from './img/icons/discord.svg'
-import facebook from './img/icons/facebook.svg'
-import './App.css'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './components/Home'
+import Games from './components/Games'
+import Groups from './components/Groups'
+import Events from './components/Events'
 
 interface AppProps {}
 
 function App({}: AppProps) {
-  // Create the count state.
-  const [statement, setStatement] = useState('')
-
-  useEffect(() => {
-    fetch('/api/hello')
-      .then(res => res.json())
-      .then(response => {
-        setStatement(response.statement)
-      })
-  }, [])
-
   return (
-    <div className="app">
-      <header>
-        <div className="logo">
-          <img src={logo} alt="Pair-a-Dice Logo" />
-          <div className="logo-content">
-            <h1>Pair-a-Dice</h1>
-            <h2>Tabletop and Board Gaming Club</h2>
-          </div>
-        </div>
+    <Router>
+      <Switch>
+        <Route path='/events'>
+          <Events/>
+        </Route>
+        <Route path='/groups'>
+          <Groups/>
+        </Route>
+        <Route path='/games'>
+          <Games/>
+        </Route>
+        <Route path='/'>
+          <Home/>
+        </Route>
+      </Switch>
 
-        <a className="facebook-link" href="https://www.facebook.com/PairaDiceGamingUF">
-          <img src={facebook} alt="Facebook Link" />
-        </a>
-        <a className="discord-link" href="https://discord.gg/HDuPvuCbtq">
-          <img src={discord} alt="Discord Logo" />
-        </a>
-      </header>
-    </div>
+    </Router>
+
   )
 }
 
