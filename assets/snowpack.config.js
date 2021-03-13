@@ -20,6 +20,11 @@ module.exports = {
         proxy.web(req, res);
       },
     },
+    {
+      'match': 'routes',
+      'src': '.*',
+      'dest': '/index.html'
+    },
   ],
   optimize: {
     bundle: true,
