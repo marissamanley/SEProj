@@ -1,14 +1,6 @@
 /// <reference types="cypress" />
 
 describe('Home Page', () => {
-  it('Should load load content from the server', () => {
-    cy.visit('http://localhost:3000')
-
-    const text = cy.get('[data-test-id=server-statement]')
-
-    text.should('contain.text', 'Hello!')
-  })
-
   describe('Basic Tests', () => {
     it('should succeed', () => {
       expect(true).to.equal(true)
