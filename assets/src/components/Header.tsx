@@ -6,11 +6,11 @@ import './Header.css'
 
 function Header() {
     return (
-        <header>
+     <header>     {/*HTML element identifying a header*/}
         <div className="logo">
           <img src={logo} alt="Pair-a-Dice Logo" />
           <div className="logo-content">
-            <h1>Pair-a-Dice</h1>
+            <h1>Pair-a-Dice</h1> 
             <h2>Tabletop and Board Gaming Club</h2>
           </div>
         </div>

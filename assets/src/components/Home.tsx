@@ -12,7 +12,7 @@ function Home({}: HomeProps) {
   <div className="root">
     <div className="app">
      
-        <Header/>
+    <Header/>
       <div className="container">
         <Sidebar/>
         <main className="home-contents">

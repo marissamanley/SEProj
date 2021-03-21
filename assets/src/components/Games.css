@@ -1,0 +1,21 @@
+
+div.games-content {
+  padding: 50px 90px;
+  background-color: #1C1E21
+}
+
+div.games-content div.title h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-left: 25px
+}
+
+div.games-content div.container {
+  display: flex;
+  flex-direction: row; 
+  margin-top: 90px;
+}
+
+

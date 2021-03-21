@@ -6,7 +6,6 @@ import people from '../img/icons/people.svg'
 import {Link} from 'react-router-dom'
 import './Sidebar.css'
 
-
 function Sidebar() {
     return (
         <aside>
