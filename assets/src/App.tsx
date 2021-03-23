@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Games from './components/Games'
 import Groups from './components/Groups'
 import Events from './components/Events'
+import EventTemplate from './components/EventTemplate'
 
 interface AppProps {}
 
@@ -11,6 +12,9 @@ function App({}: AppProps) {
   return (
     <Router>
       <Switch>
+        <Route path='/events/create'>
+          <EventTemplate/>
+          </Route>
         <Route path='/events'>
           <Events/>
         </Route>
