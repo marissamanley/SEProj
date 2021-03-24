@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Games from './components/Games'
-import Groups from './components/Groups'
+import Groups from './components/Groups/Groups'
 import Events from './components/Events'
 import EventTemplate from './components/EventTemplate'
 
@@ -12,25 +12,23 @@ function App({}: AppProps) {
   return (
     <Router>
       <Switch>
-        <Route path='/events/create'>
+        <Route path="/events/create">
           <EventTemplate/>
-          </Route>
-        <Route path='/events'>
-          <Events/>
         </Route>
-        <Route path='/groups'>
-          <Groups/>
+        <Route path="/events">
+          <Events />
         </Route>
-        <Route path='/games'>
-          <Games/>
+        <Route path="/groups">
+          <Groups />
         </Route>
-        <Route path='/'>
-          <Home/>
+        <Route path="/games">
+          <Games />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
-
     </Router>
-
   )
 }
 
