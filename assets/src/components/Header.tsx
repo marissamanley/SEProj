@@ -5,24 +5,28 @@ import facebook from '../img/icons/facebook.svg'
 import './Header.css'
 
 function Header() {
-    return (
-     <header>     {/*HTML element identifying a header*/}
-        <div className="logo">
-          <img src={logo} alt="Pair-a-Dice Logo" />
-          <div className="logo-content">
-            <h1>Pair-a-Dice</h1> 
-            <h2>Tabletop and Board Gaming Club</h2>
-          </div>
+  return (
+    <header>
+      {' '}
+      {/*HTML element identifying a header*/}
+      <div className="logo">
+        <img src={logo} alt="Pair-a-Dice Logo" />
+        <div className="logo-content">
+          <h1>Pair-a-Dice</h1>
+          <h2>Tabletop and Board Gaming Club</h2>
         </div>
-
-        <a className="facebook-link" href="https://www.facebook.com/PairaDiceGamingUF">
-          <img src={facebook} alt="Facebook Link" />
-        </a>
-        <a className="discord-link" href="https://discord.gg/HDuPvuCbtq">
-          <img src={discord} alt="Discord Logo" />
-        </a>
-      </header>
-    )
+      </div>
+      <a
+        className="facebook-link"
+        href="https://www.facebook.com/PairaDiceGamingUF"
+      >
+        <img src={facebook} alt="Facebook Link" />
+      </a>
+      <a className="discord-link" href="https://discord.gg/HDuPvuCbtq">
+        <img src={discord} alt="Discord Logo" />
+      </a>
+    </header>
+  )
 }
 
 export default Header
