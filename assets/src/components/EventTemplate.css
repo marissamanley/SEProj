@@ -1,0 +1,72 @@
+div.EventTemp {
+    padding: 50px 90px;
+    background-color: #1C1E21
+  }
+
+  div.EventTemp div.title h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+  }
+
+  div.EventTemp div.title{
+    margin-top: -75px;
+    margin-bottom: 30px;
+  }
+
+  div.EventTemp div.container {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 90px;
+  }
+
+
+  div.EventTemp main.EventTemplate h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  div.EventTemp main.EventTemplate{
+    margin-left: 25px;
+  }
+
+  div.EventTemp div.container div.contents main.EventTemplate input{
+      margin-bottom: 15px;
+      background-color: rgb(64, 64, 64);
+      width: 200%;
+      padding: 4px 8px;
+      box-sizing: border-box;
+      border: 2px solid rgb(64, 64, 64);
+      border-radius: 4px;
+      color:rgba(255, 255, 255, 0.8);
+  }
+
+  div.EventTemp div.container div.contents main.EventTemplate textarea{
+    margin-bottom: 15px;
+    background-color: rgb(64, 64, 64);
+    width: 200%;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 4px;
+    color:rgba(255, 255, 255, 0.8);
+    height: 100px;
+  }
+
+  div.EventTemp div.container div.contents main.EventTemplate button{
+  background-color: rgb(63, 199, 241);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
