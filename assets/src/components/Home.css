@@ -46,3 +46,11 @@ div.root div.app div.intro-text p {
   text-align: left;
   margin-top: 25px;
 }
+
+
+div.root div.app div.rectangle {
+  width: 120px;
+  height: 10px;
+  background: #3A53A5;
+}
+

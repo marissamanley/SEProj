@@ -1,4 +1,4 @@
-div.app aside div.sidebar a {
+aside div.sidebar a {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -11,11 +11,11 @@ div.app aside div.sidebar a {
   
 }
 
-div.app aside div.sidebar a img {
+aside div.sidebar a img {
   margin-right: 30px;
   margin-left: 35px;
 }
 
-div.app aside div.sidebar{
+aside div.sidebar{
     border-left: 3px solid white;
 }
