@@ -9,7 +9,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: center; 
     flex: 1;              /*stretch out box*/
   }
   
