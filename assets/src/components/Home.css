@@ -17,6 +17,10 @@ div.root div.app div.intro-img {
   margin-left: 32px;
 }
 
+div.root div.app div.intro-img img {
+  width: 100%;
+}
+
 div.root div.app div.intro-text {
   text-align: center;
 }

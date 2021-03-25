@@ -3,6 +3,7 @@ import homeImg from '../img/home-img.png'
 import './Home.css'
 import Header from './Header'
 import Sidebar from './Sidebar'
+import Discord from './DiscordWidget'
 
 interface HomeProps {}
 
@@ -46,10 +47,11 @@ function Home({}: HomeProps) {
               </p>
             </div>
           </main>
+          <Discord/>
         </div>
       </div>
     </div>
   )
 }
-
+ 
 export default Home
