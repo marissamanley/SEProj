@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Games from './components/Games'
 import GamesTemplate from './components/GamesTemplate'
 import Groups from './components/Groups/Groups'
-import Events from './components/Events'
+import Events from './components/Events/Events'
 import EventTemplate from './components/EventTemplate'
 
 interface AppProps {}
@@ -14,11 +14,6 @@ function App({}: AppProps) {
   return (
     <Router>
       <Switch>
-        <Route path="/events/create">
-          <Layout>
-            <EventTemplate />
-          </Layout>
-        </Route>
         <Route path="/events">
           <Layout>
             <Events />
