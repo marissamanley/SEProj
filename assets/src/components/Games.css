@@ -24,7 +24,6 @@ div.games-content div.title h1{
 div.games-content div.container {
   display: flex;
   flex-direction: row; 
-  margin-top: 11px;
 }
 
 
@@ -46,7 +45,7 @@ div.games-content div.container div.games div.g1 div.g1_text h1{
   
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: 200px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
 
@@ -71,7 +70,7 @@ div.games-content div.container div.games div.g2 div.g2_text h1{
   
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: 200px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
 
