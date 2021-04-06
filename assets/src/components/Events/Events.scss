@@ -1,0 +1,40 @@
+div.filup {
+    display: flex;         
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #ffffff80;
+        font-weight: 400;
+        margin-right: 5px;
+    }
+
+    div.updated {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center; 
+        flex: 1;
+    }
+
+    div.filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center; 
+        button{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #ffffff80;
+            font-weight: 400;
+            margin-left: 20px;
+            background:none;
+            border:none;   
+        }
+        button.all{
+            color: rgb(255, 255, 255); 
+        }
+    }
+}
