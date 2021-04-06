@@ -11,6 +11,7 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
+    '@snowpack/plugin-sass',
   ],
   routes: [
     // Proxy API requests in development

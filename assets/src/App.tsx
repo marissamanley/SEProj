@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
 import Home from './components/Home'
 import Games from './components/Games'
 import Groups from './components/Groups/Groups'
@@ -13,19 +14,29 @@ function App({}: AppProps) {
     <Router>
       <Switch>
         <Route path="/events/create">
-          <EventTemplate/>
+          <Layout>
+            <EventTemplate />
+          </Layout>
         </Route>
         <Route path="/events">
-          <Events />
+          <Layout>
+            <Events />
+          </Layout>
         </Route>
         <Route path="/groups">
-          <Groups />
+          <Layout>
+            <Groups />
+          </Layout>
         </Route>
         <Route path="/games">
-          <Games />
+          <Layout>
+            <Games />
+          </Layout>
         </Route>
         <Route path="/">
-          <Home />
+          <Layout>
+            <Home />
+          </Layout>
         </Route>
       </Switch>
     </Router>

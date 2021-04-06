@@ -1,5 +1,5 @@
 import React from 'react'
-import './GroupCard.css'
+import './GroupCard.scss'
 import dragon from '../../img/dragon.png'
 
 function GroupCard() {
