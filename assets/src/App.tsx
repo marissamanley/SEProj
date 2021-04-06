@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Home from './components/Home'
 import Games from './components/Games'
+import GamesTemplate from './components/GamesTemplate'
 import Groups from './components/Groups/Groups'
 import Events from './components/Events'
 import EventTemplate from './components/EventTemplate'
@@ -26,6 +27,11 @@ function App({}: AppProps) {
         <Route path="/groups">
           <Layout>
             <Groups />
+          </Layout>
+        </Route>
+        <Route path="/games/submit">
+          <Layout>
+            <GamesTemplate />
           </Layout>
         </Route>
         <Route path="/games">
