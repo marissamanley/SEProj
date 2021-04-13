@@ -7,6 +7,10 @@ import { EventsController } from './events/events.controller'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { ConfigModule } from '@nestjs/config'
 import { Event } from './events/event.entity'
+import { Game } from './games/game.entity'
+import { Group } from './groups/group.entity'
+import { GamesController } from './games/games.controller'
+import { GroupsController } from './groups/groups.controller'
 
 @Module({
   imports: [
@@ -26,9 +30,14 @@ import { Event } from './events/event.entity'
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
-    TypeOrmModule.forFeature([Event]),
+    TypeOrmModule.forFeature([Event, Game, Group]),
   ],
-  controllers: [AppController, EventsController],
+  controllers: [
+    AppController,
+    EventsController,
+    GamesController,
+    GroupsController,
+  ],
   providers: [AppService],
 })
 export class AppModule {}
