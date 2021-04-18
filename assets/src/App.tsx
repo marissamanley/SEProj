@@ -14,6 +14,11 @@ function App({}: AppProps) {
   return (
     <Router>
       <Switch>
+        <Route path="/events/create">
+          <Layout>
+            <EventTemplate />
+          </Layout>
+        </Route>
         <Route path="/events">
           <Layout>
             <Events />
