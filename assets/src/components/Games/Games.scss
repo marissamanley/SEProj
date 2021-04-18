@@ -39,25 +39,19 @@ div.submit {
 ul.games {
   display: flex;
   flex-flow: row wrap;
-  margin: 0;
+  max-width: 570px;
+  padding: 0;
+  margin: auto;
 
   li {
     max-width: 160px;
     margin-right: 30px;
 
     img {
+      width: 162.28px;
+      height: 216.67px;
       border-radius: 4px;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: 200px;
-      font-size: 14px;
-      line-height: 19px;
-
-      color: #FFFFFF;
+      margin-bottom: 2px;
     }
   }
 }
