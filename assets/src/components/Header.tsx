@@ -6,7 +6,21 @@ import './Header.css'
 
 function Header() {
   return (
+    
     <header>
+      <div className="rainbow1"></div>
+      <div className="rainbow2"></div>
+      <div className="rainbow3"></div>
+      <div className="rainbow4"></div>
+      <div className="rainbow5"></div>
+      <div className="rainbow6"></div>
+      <div className="rainbow7"></div>
+      <div className="rainbow8"></div>
+      <div className="rainbow9"></div>
+      <div className="rainbow10"></div>
+      <div className="rainbow11"></div>
+      <div className="rainbow12"></div>
+      <div className="rainbow13"></div>
       {' '}
       {/*HTML element identifying a header*/}
       <div className="logo">

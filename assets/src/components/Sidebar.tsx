@@ -19,11 +19,11 @@ function Sidebar() {
       </Link>
       <Link className="games" to="/games">
         <img src={book} alt="Book Icon" />
-        Game Catalog
+        Game Library
       </Link>
       <Link className="group" to="/groups">
         <img src={people} alt="People Icon" />
-        Find a Group
+        Find an RPG Group
       </Link>
     </aside>
   )
