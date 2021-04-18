@@ -3,6 +3,17 @@ import EventCard from './EventCard'
 import './Events.scss'
 
 function Events() {
+  const [events, setEvents] = useState([])
+
+  useEffect(() => {
+    fetch('/api/events')
+      .then(response => response.json())
+      .then(evnts => {
+        setEvents(evnts)
+        console.log(evnts)
+      })
+  }, [])
+
   return(
     <main>
     <div className="filup">
@@ -17,9 +28,20 @@ function Events() {
       </div>
 
     </div>
-    <EventCard />
-    <EventCard />
-    <EventCard />
+
+    {
+      events.map((event: any) => (
+        <EventCard
+          key={event.title}
+          title={event.title}
+          location={event.location}
+          games={event.games}
+          url={event.url}
+          description={event.description}
+          date={null}
+        />
+      ))
+    }
   </main>
 
   )
