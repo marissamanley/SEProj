@@ -1,0 +1,64 @@
+div.announcement-box {
+    padding: 25px 20px;
+    background-color: #27292C;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    max-width: 500px;
+    margin-bottom: 50px;
+    //margin-right: 200px;
+  
+      div.head {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        div.announcement {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+        
+          div.date{
+            background-color: #323437;
+            height: 69px;
+            width: 59px;
+            border-radius: 5px;
+            padding-top: 5px;
+            margin-right: 20px;
+            h1 {
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 28px;
+                color: white;
+                font-weight: 700;
+              }
+      
+              h2 {
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                color: rgb(255, 255, 255, 0.65);
+                font-weight: 300;
+              }
+           }
+          
+          div.content {
+            h1 {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 18px;
+              color: white;
+              font-weight: 600;
+            }
+  
+          }
+        }
+      }
+      
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+      }
+    }
