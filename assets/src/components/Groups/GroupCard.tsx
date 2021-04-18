@@ -1,25 +1,23 @@
 import React from 'react'
 import './GroupCard.scss'
 import dragon from '../../img/dragon.png'
+import { linkSync } from 'node:fs'
 
-function GroupCard() {
+function GroupCard({ name, game, url, description }: any)  {
   return (
     <div className="group-card">
       <div className="head">
         <div className="club">
           <img src={dragon} alt="Group Logo" />
           <div className="content">
-            <h1>Gators of the Coast</h1>
-            <h2>Dungeons And Dragons</h2>
+            <h1>{name}</h1>
+            <h2>{game}</h2>
           </div>
         </div>
-        <button>View on Discord</button>
+        <a href={url}>View on Discord</a>
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam
-        aliquam sem. Sed nisi lacus sed viverra tellus in hac. Tincidunt ornare
-        massa eget egestas purus.
+        {description}
       </p>
     </div>
   )
