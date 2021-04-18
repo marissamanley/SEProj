@@ -7,6 +7,7 @@ import GamesTemplate from './components/GamesTemplate'
 import Groups from './components/Groups/Groups'
 import Events from './components/Events/Events'
 import EventTemplate from './components/EventTemplate'
+import GroupTemplate from './components/GroupTemplate'
 
 interface AppProps {}
 
@@ -22,6 +23,11 @@ function App({}: AppProps) {
         <Route path="/events">
           <Layout>
             <Events />
+          </Layout>
+        </Route>
+        <Route path="/groups/new">
+          <Layout>
+            <GroupTemplate />
           </Layout>
         </Route>
         <Route path="/groups">

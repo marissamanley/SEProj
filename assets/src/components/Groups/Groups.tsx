@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import GroupCard from './GroupCard'
+import { Link } from 'react-router-dom'
+import './Groups.scss'
 
 function Groups() {
     const [groups, setGroups] = useState([])
@@ -14,6 +16,15 @@ function Groups() {
     }, [])
   return (
     <main>
+      <div className="head">
+        <div className="spacer">
+        </div>
+        <div className="create">
+            <Link className="newGroup" to="/groups/new">
+            Create Group
+            </Link>
+        </div>
+      </div>
       {
       groups.map((group: any) => (
         <GroupCard
@@ -25,6 +36,7 @@ function Groups() {
         />
       ))
     }
+     
     </main>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './EventCard.scss'
-import location from '../../img/icons/location.svg'
+import locationIcon from '../../img/icons/location.svg'
 
 function EventCard({ title, location, games, url, description, date }: any) {
   return (
@@ -13,9 +13,9 @@ function EventCard({ title, location, games, url, description, date }: any) {
           </div>
           <div className="content">
             <h1>{title}</h1>
-            <img src={location} />
+            <img src={locationIcon} />
             <h2>{location}</h2>
-            <h2 className="games">{games}</h2>
+            <h2 className="games">{games.join(", ")}</h2>
           </div>
         </div>
         {
