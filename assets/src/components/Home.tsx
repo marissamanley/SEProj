@@ -11,31 +11,28 @@ function Home({}: HomeProps) {
         <img src={homeImg} alt="Home Image" />
       </div>
       <div className="intro-text">
-        <h1>We are the premier tabletop and boardgaming</h1>
-        <h2>club at the University of Florida.</h2>
+        <h1>We are the premier tabletop and</h1>
+        <h2>boardgaming club at the University of Florida.</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Pellentesque nec nam aliquam sem. Sed nisi lacus sed viverra tellus in
-          hac. Tincidunt ornare massa eget egestas purus. Nisl rhoncus mattis
-          rhoncus urna neque viverra. Sit amet commodo nulla facilisi nullam
-          vehicula ipsum.
+          Welcome to Pair-A-Dice Boardgaming Club at the University of Florida!
+          Join us to play many different types of board games, a variety of RPGs (i.e. Dungeons & Dragons, Powered by the 
+          Apocalypse, or hipster indie one-offs), and video games, or to just hang out, meet 
+          new friends, share interests, and let us enjoy your company. Players of all skill levels are always 
+          welcome, and gosh darn we love meeting new people! Other club activities (once COVID is no more!) 
+          include semi-frequent gimmicky parties and a hodgepodge of less frequent events 
+          (hiking, sports, and special meetups for specific long/heavy games). LGBTQ+ friendly! 
           <br />
           <br />
-          Aliquet enim tortor at auctor urna nunc id cursus metus. Mi in nulla
-          posuere sollicitudin aliquam ultrices sagittis. Mauris rhoncus aenean
-          vel elit scelerisque mauris pellentesque. Neque vitae tempus quam
-          pellentesque nec nam aliquam sem.
+          Check out the Naviagation Sidebar to explore the website. Want to check out the current and upcoming
+          club events? The 'Event Schedule' is the place for you! Want to see the current club game inventory, 
+          or submit a suggestion for a game for the club? Look over the 'Games Library'! Want to see
+          the extraordinary list of current RPG groups available to join, or to submit a request to start your
+          own? Lo and behold, a 'Find an RPG Group' tab!
           <br />
           <br />
-          Congue eu consequat ac felis donec et. Enim nulla aliquet porttitor
-          lacus luctus. Hac habitasse platea dictumst vestibulum rhoncus est
-          pellentesque. Egestas purus viverra accumsan in nisl nisi scelerisque.
-          Sagittis id consectetur purus ut faucibus pulvinar elementum integer.
-          Ornare lectus sit amet est placerat in egestas erat. In metus
-          vulputate eu scelerisque felis imperdiet proin fermentum. Eget arcu
-          dictum varius duis at consectetur lorem. Vel eros donec ac odio tempor
-          orci.
+          Pair-A-Dice utilizes a Discord Server as the virutal hub for the club. Discord is a free social media 
+          platform where members communicate with text messaging, voice calls, video calls, and media. Join ours today
+          by connecting using the Discord Widget on the Welcome page or on the top right of the page! 
         </p>
       </div>
     </main>
