@@ -1,0 +1,37 @@
+
+
+div.head{
+    display: flex;         
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+div.spacer {
+    display: flex;         
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: 1;
+}
+
+div.create {
+    display: flex;         
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;  
+    a{
+        background-color: rgb(63, 199, 241);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+  }
