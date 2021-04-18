@@ -9,6 +9,25 @@
 			"name": "Events",
 			"item": [
 				{
+					"name": "Get all events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/events",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create new event",
 					"request": {
 						"method": "POST",
@@ -63,45 +82,6 @@
 					"response": []
 				},
 				{
-					"name": "Get all events",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:3000/api/events",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"events"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete an event",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:3000/api/events/606f82bff7bb553b20911830",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"events",
-								"606f82bff7bb553b20911830"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Update an event",
 					"request": {
 						"method": "PUT",
@@ -126,6 +106,272 @@
 								"api",
 								"events",
 								"606f827a9ce3af01dcb70a5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/events/606f82bff7bb553b20911830",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"events",
+								"606f82bff7bb553b20911830"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "Get all games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/games",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "This is a game",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Party",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://google.com",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is a description for a game",
+									"type": "text"
+								},
+								{
+									"key": "pictureUrl",
+									"value": "http://google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/games",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a game",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "This is a game with an updated description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/games/6070b65997b00339b4cd8e43",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games",
+								"6070b65997b00339b4cd8e43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a game",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/games/6070b65997b00339b4cd8e43",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games",
+								"6070b65997b00339b4cd8e43"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Groups",
+			"item": [
+				{
+					"name": "Get all groups",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/groups",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "This is a group",
+									"type": "text"
+								},
+								{
+									"key": "game",
+									"value": "Cool games",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "https://google.com",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is the description for a group",
+									"type": "text"
+								},
+								{
+									"key": "pictureUrl",
+									"value": "https://google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/groups",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a group",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "This is a group with an updated description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/groups/6070b7dd97b00339b4cd8e44",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"groups",
+								"6070b7dd97b00339b4cd8e44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a group",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/groups/6070b7dd97b00339b4cd8e44",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"groups",
+								"6070b7dd97b00339b4cd8e44"
 							]
 						}
 					},

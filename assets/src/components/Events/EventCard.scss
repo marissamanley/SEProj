@@ -45,7 +45,7 @@ div.event-card {
         }
       }
   
-      button {
+      a {
         padding: 12px;
         border: none;
         border-radius: 5px;
@@ -55,6 +55,7 @@ div.event-card {
         font-size: 14px;
         color: white;
         font-weight: 600;
+        text-decoration: none;
       }
     }
   

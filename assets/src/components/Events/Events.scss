@@ -3,7 +3,9 @@ div.filup {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    h3{
+    margin-bottom: 20px;
+    
+    h3 {
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         color: #ffffff80;
@@ -24,7 +26,8 @@ div.filup {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center; 
-        button{
+        
+        button {
             font-family: 'Open Sans', sans-serif;
             font-size: 14px;
             color: #ffffff80;
@@ -33,7 +36,8 @@ div.filup {
             background:none;
             border:none;   
         }
-        button.all{
+        
+        button.all {
             color: rgb(255, 255, 255); 
         }
     }
