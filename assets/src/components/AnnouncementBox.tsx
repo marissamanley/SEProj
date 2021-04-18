@@ -8,8 +8,8 @@ function AnnouncementBox() {
             <div className="head">
             <div className="announcement">
                 <div className="date">
-                    <h2>FEB</h2>
-                    <h1>22</h1>
+                  
+                    <h1>FEB 22</h1>
                 </div>
                 <div className="content">
                 <h1>Club Announcement</h1>
