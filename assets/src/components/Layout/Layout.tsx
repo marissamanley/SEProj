@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Sidebar from '../Sidebar'
 import DiscordWidget from '../UI/DiscordWidget'
+import AnnouncementBox from '../AnnouncementBox'
 import './Layout.scss'
 
 const Layout: React.FC = ({ children }) => {
@@ -14,6 +15,9 @@ const Layout: React.FC = ({ children }) => {
         <Sidebar />
       </div>
       <div className="content">{children}</div>
+      <div className="announcements">
+        <AnnouncementBox />
+      </div>
       <div className="widget">
         <DiscordWidget />
       </div>
