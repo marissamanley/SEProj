@@ -11,6 +11,8 @@ import { Game } from './games/game.entity'
 import { Group } from './groups/group.entity'
 import { GamesController } from './games/games.controller'
 import { GroupsController } from './groups/groups.controller'
+import { AnnouncementsController } from './announcements/announcements.controller'
+import { Announcement } from './announcements/announcement.entity'
 
 @Module({
   imports: [
@@ -30,13 +32,14 @@ import { GroupsController } from './groups/groups.controller'
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
-    TypeOrmModule.forFeature([Event, Game, Group]),
+    TypeOrmModule.forFeature([Event, Game, Group, Announcement]),
   ],
   controllers: [
     AppController,
     EventsController,
     GamesController,
     GroupsController,
+    AnnouncementsController,
   ],
   providers: [AppService],
 })

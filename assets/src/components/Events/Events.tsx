@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
+import type { Event } from '../../models/event'
 import EventCard from './EventCard'
 import './Events.scss'
 
 function Events() {
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState<Event[]>([])
 
   useEffect(() => {
     fetch('/api/events')
       .then(response => response.json())
-      .then(evnts => {
+      .then((evnts: Event[]) => {
         setEvents(evnts)
-        console.log(evnts)
       })
   }, [])
 
@@ -30,7 +30,7 @@ function Events() {
     </div>
 
     {
-      events.map((event: any) => (
+      events.map(event => (
         <EventCard
           key={event.title}
           title={event.title}
