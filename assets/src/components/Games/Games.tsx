@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import GameImg1 from '../../img/Game_img_1.png'
-import GameImg2 from '../../img/Game_img_2.png'
 import GameImg from '../../img/BoardgameStock.jpeg'
 import './Games.scss'
 import GamesCard from './GamesCard'
-import Header from '../Header'
-import Sidebar from '../Sidebar'
+import type { Game } from 'src/models/game'
 
 interface GamesProps {}
 
 function Games({}: GamesProps) {
-  const [games, setGames] = useState([])
+  const [games, setGames] = useState<Game[]>([])
 
   useEffect(() => {
     fetch('/api/games')
     .then(response => response.json())
-    .then(gmes => {
+    .then((gmes: Game[]) => {
       setGames(gmes)
-      console.log(gmes)
     })
   }, [])
 
@@ -38,12 +34,11 @@ function Games({}: GamesProps) {
     
         <ul className="games">
             {
-              games.map((game: any) => (
+              games.map(game => (
               <li>
-                
                 <img src={GameImg} alt="GameImg" />
                 <GamesCard 
-                title = {game.title}
+                  title={game.title}
                 />
               </li>
               ))

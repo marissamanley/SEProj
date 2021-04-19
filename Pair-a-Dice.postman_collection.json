@@ -378,6 +378,119 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Announcements",
+			"item": [
+				{
+					"name": "Get all announcements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/announcements",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"announcements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new announcement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "This is an announcement",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2021-04-15",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is the body of an announcement",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/announcements",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"announcements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "This is an updated description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/announcements/607dcb1d8bad5b234cf7a802",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"announcements",
+								"607dcb1d8bad5b234cf7a802"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/announcements/607dcb1d8bad5b234cf7a802",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"announcements",
+								"607dcb1d8bad5b234cf7a802"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

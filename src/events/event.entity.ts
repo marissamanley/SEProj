@@ -11,6 +11,9 @@ export class Event {
   @Column()
   location: string
 
+  @Column()
+  date: string
+
   @Column({ array: true })
   games: string[]
 

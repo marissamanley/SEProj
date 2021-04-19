@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react'
 import GroupCard from './GroupCard'
 import { Link } from 'react-router-dom'
 import './Groups.scss'
+import type { Group } from 'src/models/group'
 
 function Groups() {
-    const [groups, setGroups] = useState([])
+    const [groups, setGroups] = useState<Group[]>([])
 
     useEffect(() => {
       fetch('/api/groups')
         .then(response => response.json())
-        .then(evnts => {
-          setGroups(evnts)
-          console.log(evnts)
+        .then((grps: Group[]) => {
+          setGroups(grps)
         })
     }, [])
   return (
@@ -26,9 +26,9 @@ function Groups() {
         </div>
       </div>
       {
-      groups.map((group: any) => (
+      groups.map(group => (
         <GroupCard
-          key={group.title}
+          key={group.name}
           name={group.name}
           game={group.game}
           url={group.url}
