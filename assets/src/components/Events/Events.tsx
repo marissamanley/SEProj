@@ -38,7 +38,7 @@ function Events() {
           games={event.games}
           url={event.url}
           description={event.description}
-          date={null}
+          date={event.date}
         />
       ))
     }
