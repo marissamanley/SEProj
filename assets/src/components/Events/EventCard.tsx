@@ -4,12 +4,10 @@ import locationIcon from '../../img/icons/location.svg'
 
 function EventCard({ title, location, games, url, description, date }: any) {
 
-  {
     let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    let d = new Date(date)
-    var month = monthNames[d.getMonth()];
-    var day = d.getDate() + 1;
-  }
+    let d = new Date(date);
+    let month = monthNames[d.getMonth()];
+    let day = d.getDate() + 1;
   return (
     <div className="event-card">
       <div className="head">
