@@ -6,7 +6,7 @@ function GamesCard({ title }:any) {
         <div className="games-card">
             <div className="game-title">
                 <h1>{title}</h1>
-            </div>
+            </div>c
         </div>
     )
 }
