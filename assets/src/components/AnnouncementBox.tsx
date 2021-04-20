@@ -14,8 +14,6 @@ function AnnouncementBox() {
       })
   }, [])
 
-
-
   return (
     <div className="announcement-box">
       {
