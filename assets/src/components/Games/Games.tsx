@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import type { Game } from '../../models/game'
 import GameImg from '../../img/BoardgameStock.jpeg'
 import './Games.scss'
 import GamesCard from './GamesCard'
-import type { Game } from 'src/models/game'
 
 interface GamesProps {}
 
@@ -27,18 +27,19 @@ function Games({}: GamesProps) {
 
             <div className="submit">
             <Link className="submitButton" to="/games/submit">
-            Submit Game Request
+            Submit Game Suggestion
             </Link>
             </div>
         </div>
     
         <ul className="games">
             {
-              games.map(game => (
+              games.map((game: any) => (
               <li>
+                
                 <img src={GameImg} alt="GameImg" />
                 <GamesCard 
-                  title={game.title}
+                title = {game.title}
                 />
               </li>
               ))
