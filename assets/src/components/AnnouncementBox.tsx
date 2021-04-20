@@ -1,27 +1,49 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import type { Announcement } from './../models/announcement'
 import './AnnouncementBox.scss'
 
 function AnnouncementBox() {
-  return (
 
+  const [announcements, setAnnouncements] = useState<Announcement[]>([])
+
+  useEffect(() => {
+    fetch('/api/announcements')
+      .then(response => response.json())
+      .then((ancmnt: Announcement[]) => {
+        setAnnouncements(ancmnt)
+      })
+  }, [])
+
+
+
+  return (
     <div className="announcement-box">
-            <div className="head">
-            <div className="announcement">
-                <div className="date">
-                  
-                    <h1>FEB 22</h1>
-                </div>
-                <div className="content">
-                <h1>Club Announcement</h1>
-                </div>
-            </div>
-            </div>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam
-            aliquam sem. Sed nisi lacus sed viverra tellus in hac. Tincidunt ornare
-            massa eget egestas purus.
-            </p>
+      {
+      announcements.map( announcements => {
+        let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let d = new Date(announcements.date);
+        let month = monthNames[d.getMonth()];
+        let day = d.getDate() + 1;
+ 
+        return (
+          <>
+              <div className="head">
+              <div className="announcement">
+                  <div className="date">
+                      <h1>{month + " " + day}</h1>
+                  </div>
+                  <div className="content">
+                  <h1>{announcements.title}</h1>
+                  </div>
+              </div>
+              </div>
+              <p>
+                {announcements.description}
+              </p>
+          </>
+        )
+      })
+      }
         </div>
   )
 }
