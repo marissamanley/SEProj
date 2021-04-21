@@ -1,3 +1,8 @@
+This is the GitHub repository for the Pair-A-Dice Boardgaming Club website, created as a Software Engineering project for the Intro to Software Engineering Course at the University of Florida.
+
+By Marissa Manley, Jacob Bleser, Ethan Haengel, and Juan Pablo Lancheros
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
